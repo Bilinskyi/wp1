@@ -1,0 +1,129 @@
+@import "_normalize.scss";
+@import "_layout.scss";
+@import "_variables.scss";
+@import "_base.scss";
+
+header {
+	.top-line {
+		background-color: #04151c;
+		padding: 20px;
+		.header-flex-top {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+			.header-contacts {
+				li {
+					display: inline-block;
+					color: #f3f3f3;
+					font-size: 18px;
+					&:first-child {
+						margin-right: 41px;
+					}
+					i {
+						color: #f3f3f3;
+						font-size: 18px;
+						margin-right: 10px;
+					}
+				}
+			}
+			.header-form {
+				width: 360px;
+				height: 30px;
+				background-color: white;
+				border-radius: 5px;
+				position: relative;
+				overflow: hidden;
+				font-weight: $light;
+				font-size: 14px;
+				color: #000;
+				padding-left: 10px;
+				input {
+					width: 90%;
+					height: 30px;
+					border: none;
+					outline: none;
+				}
+				button {
+					position: absolute;
+					width: 15px;
+					height: 16px;
+					right: 10px;
+					top: 50%;
+					transform: translateY(-50%);
+					border: none;
+					outline: none;
+					background: url(../img/search.png) center center no-repeat;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.bottom-line {
+		.header-flex-bottom {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			.menu {
+				li {
+					display: inline-block;
+					&.active {
+						a {
+							color: #009836;
+							background-color: #f4f6f5;
+							border-bottom: 5px solid #009836;							
+						}
+					}
+					a {
+						padding: 42px 20px;
+						text-decoration: none;
+						display: inline-block;
+						color: #333e43;
+						font-size: 16px;
+						border-bottom: 5px solid #fff;
+						font-family: $heavy;
+						i {
+							font-size: 16px;
+						}
+						&:hover {
+							color: #009836;
+							background-color: #f4f6f5;
+							border-bottom: 5px solid #009836;
+						}
+					}
+				}
+			}
+		}
+	}						
+}
+
+.button {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	background-color: #4ab848;
+	border-radius: 5px;
+	box-shadow: inset 0 -3px 0 rgba(31, 131, 29, 0.35);
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	transition: background 0.35s ease;
+	&:hover {
+		background-color: #298b27;
+	}
+	&:active {
+		transform: translateY(1px);
+		box-shadow:none;
+
+	}
+}
+
