@@ -1,6 +1,11 @@
 
 $(document).ready(function(){
 
+  $('.menu-drop').on('click', function(e) {
+   e.preventDefault(); 
+   $(this).closest('.container').find('.header-flex-bottom .flex-item:last-child .menu').slideToggle();
+  });
+
   $(".owl-carousel").owlCarousel({
    navigation : true,
    navigationText : ["",""],
